@@ -1,0 +1,22 @@
+ext.versions = [
+    minSdk             : 16,
+    targetSdk          : 27,
+    compileSdk         : 27,
+    buildTools         : '27.0.3',
+
+    // Support libraries
+    appcompat          : '27.1.1',
+    constraint         : '1.1.2',
+
+    // Gradle plugins
+    androidGradlePlugin: '3.1.3',
+
+    // Network
+    retrofit                      : '2.4.0',
+    okhttp                        : '3.11.0',
+    gson                          : '2.8.5',
+]
+
+ext.gradlePlugins = [
+    android: "com.android.tools.build:gradle:${versions.androidGradlePlugin}",
+]
