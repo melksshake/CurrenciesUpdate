@@ -43,6 +43,12 @@ dependencies {
   implementation "com.android.support:animated-vector-drawable:${versions.appcompat}"
   implementation "com.android.support.constraint:constraint-layout:${versions.constraint}"
 
+  // Additional libs
+  api "com.google.auto.value:auto-value-annotations:${versions.autovalue}"
+  annotationProcessor "com.google.auto.value:auto-value:${versions.autovalue}"
+  testAnnotationProcessor "com.google.auto.value:auto-value:${versions.autovalue}"
+  androidTestAnnotationProcessor "com.google.auto.value:auto-value:${versions.autovalue}"
+
   // Network
   implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}"
   implementation "com.squareup.retrofit2:converter-gson:${versions.retrofit}"
