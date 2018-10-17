@@ -6,7 +6,7 @@ android {
 
   defaultConfig {
     applicationId "com.melkonyan.currenciesupdate"
-    minSdkVersion 15
+    minSdkVersion 16
 
     targetSdkVersion versions.targetSdk
     versionCode versions.code
@@ -48,6 +48,21 @@ dependencies {
   annotationProcessor "com.google.auto.value:auto-value:${versions.autovalue}"
   testAnnotationProcessor "com.google.auto.value:auto-value:${versions.autovalue}"
   androidTestAnnotationProcessor "com.google.auto.value:auto-value:${versions.autovalue}"
+  annotationProcessor "com.google.auto.value:auto-value:${versions.autovalue}"
+  testAnnotationProcessor "com.google.auto.value:auto-value:${versions.autovalue}"
+  androidTestAnnotationProcessor "com.google.auto.value:auto-value:${versions.autovalue}"
+  api "com.ryanharter.auto.value:auto-value-gson-annotations:${versions.autovaluegson}"
+  testImplementation "com.ryanharter.auto.value:auto-value-gson-annotations:${versions.autovaluegson}"
+  annotationProcessor "com.ryanharter.auto.value:auto-value-gson:${versions.autovaluegson}"
+  testAnnotationProcessor "com.ryanharter.auto.value:auto-value-gson:${versions.autovaluegson}"
+  androidTestAnnotationProcessor "com.ryanharter.auto.value:auto-value-gson:${versions.autovaluegson}"
+  annotationProcessor "com.ryanharter.auto.value:auto-value-parcel:${versions.autovalueparcel}"
+  annotationProcessor "com.gabrielittner.auto.value:auto-value-with:${versions.autovaluewith}"
+
+  implementation "frankiesardo:icepick:${versions.icepick}"
+  annotationProcessor "frankiesardo:icepick-processor:${versions.icepick}"
+  implementation "com.jakewharton.timber:timber:${versions.timber}"
+  //
 
   // Network
   implementation "com.squareup.retrofit2:retrofit:${versions.retrofit}"
@@ -58,6 +73,15 @@ dependencies {
   debugImplementation "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}"
   debugImplementation "com.squareup.okhttp3:logging-interceptor:${versions.okhttp}"
   implementation "com.google.code.gson:gson:${versions.gson}"
+
+  implementation "io.reactivex:rxjava:${versions.rxJava}"
+  implementation "io.reactivex.rxjava2:rxjava:${versions.rxJava2}"
+  implementation "io.reactivex:rxandroid:${versions.rxAndroid}"
+  implementation "io.reactivex.rxjava2:rxandroid:${versions.rxAndroid2}"
+  implementation "com.jakewharton.rxrelay:rxrelay:${versions.rxRelay}"
+  implementation "com.jakewharton.rxrelay2:rxrelay:${versions.rxRelay2}"
+  implementation "com.jakewharton.rx:replaying-share:${versions.rxReplayingShare}"
+  implementation "com.jakewharton.rx2:replaying-share:${versions.rxReplayingShare2}"
 
   implementation fileTree(dir: 'libs', include: ['*.jar'])
 

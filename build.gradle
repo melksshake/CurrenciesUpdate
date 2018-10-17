@@ -3,19 +3,20 @@ buildscript {
   apply from: 'dependencies.gradle'
   repositories {
     google()
-    //    mavenCentral()
+    mavenCentral()
     jcenter()
   }
   dependencies {
-    classpath 'com.android.tools.build:gradle:3.1.4'
+    classpath 'com.android.tools.build:gradle:3.2.1'
   }
 }
 
 allprojects {
   repositories {
     google()
-    //    mavenCentral()
+    mavenCentral()
     jcenter()
+    maven { url 'https://clojars.org/repo/' } // IcePick and Scout.
   }
 }
 
